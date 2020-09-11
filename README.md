@@ -11,7 +11,7 @@ TODO: docker setup
 The blog app uses firebase for blog posts. Combined with Vue this will make your posts realtime as the phone app sends 
 them to firebase. This should probably be two repos but... meh!
 
-
+Set up firebase. Not gonna walk through that part since well, they made a video! Don't be needy.
 create your .env files in you app and in your server. They are separate since they handle them differently.
 ##### Keep them secret, keep them safe.
 
