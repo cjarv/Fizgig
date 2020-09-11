@@ -9,11 +9,11 @@ TODO: docker setup
 
 #### Getting started
 The blog app uses firebase for blog posts. Combined with Vue this will make your posts realtime as the phone app sends 
-them to firebase. This should probably be two repos but... meh! I did it this way so people can see how webpack works
-within an app build. Right or wrong... this is how I do it. Hope it helps you all!
+them to firebase. This should probably be two repos but I did it this way so people can see how webpack works
+within an app build. This is how I do it. Hope it helps you all!
 
-Set up firebase. Not gonna walk through that part since well, they made a video! Don't be needy.
-Create your .env files in you app and in your server. They are separate since they handle them differently.
+Set up firebase. Not gonna walk through that part but here's a link https://firebase.google.com/.
+Next create your .env files in you app and in your server. They are separate since they handle them differently.
 ##### Keep them secret, keep them safe.
 
 - in server .env
