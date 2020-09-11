@@ -26,7 +26,7 @@ app.use('/', (req, res) => {
 });
 
 const server = app.listen(process.env.PORT, () => {
-    console.log("Fizgig started on port 8080");
+    console.log("Fizgig started");
 });
 
 const io = socket(server);

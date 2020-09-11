@@ -1,11 +1,11 @@
 /*
-api for returning mongo data
+rest api for returning mongo data
  */
-
+require('dotenv').config();
 const mongodb = require('mongodb');
 const express = require('express');
 const router = express.Router();
-const FIZZY_URL = 'mongodb://localhost/27017/';
+const FIZZY_URL = 'mongodb://' + process.env.MONGOHOST + '/' + process.env.MONGOPORT + '/';
 
 // Middleware
 
