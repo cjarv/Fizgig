@@ -1,28 +1,24 @@
 <template>
-    <div>
-        <h1>Good Morning</h1>
+    <div class="center-panel flx-row center">
+        <h1>Van Tracker</h1>
     </div>
 </template>
 
 <script>
-    // Firebase
-    import { db } from '../assets/js/firebase_middleware'
+
+
     export default {
         name: "app_center_panel",
+        components: {
+        },
+        props: {
+            blog_posts: null,
+        },
         data () {
             return {
-                blog_posts: [],
-            }
-        },
-        firestore () {
-            // firestore DB
-            return {
-                blog_posts: db.collections('blog_posts'),
             }
         }
     }
 </script>
-
 <style scoped>
-
 </style>

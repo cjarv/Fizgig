@@ -1,21 +1,22 @@
 <template>
     <div id="app">
-        <div class="main-container flx-row">
-            <app_center_panel>
-            </app_center_panel>
-        </div>
+        <app_main_container class="main-container"></app_main_container>
     </div>
 </template>
 
 <script>
-import app_center_panel from "./components/app_center_panel";
+import app_main_container from "./components/app_main_container";
+
+
 export default {
-    components: {app_center_panel}
+    components: {
+        app_main_container,
+    }
 }
 </script>
 <style>
-    /*third party*/
+    /*third party css*/
 
-    /*user defined*/
-    @import "assets/css/style.css";
+    /*our global css*/
+    @import '@/assets/css/style.css';
 </style>

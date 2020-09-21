@@ -2,12 +2,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
-// require('dotenv').config();
+
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/main.js'), // application entry point
     resolve: {
-        extensions: ['.js', '.vue', '.json', '.ts', '.css'], //file extensions to process for packaging
+        extensions: ['.js', '.vue', '.json', '.css'], //file extensions to process for packaging
         alias: { // So this is crazy handy. Make aliases to use in your code and then they will resolve
             'vue$': "vue/dist/vue.esm.js",
             '@': path.resolve('src')
@@ -40,7 +40,17 @@ module.exports = {
             },
             { test: /\.vue$/, use: 'vue-loader' },
             { test: /\.css$/,
-                use: [ 'vue-style-loader', 'css-loader' ],
+                use: [
+                    'style-loader',
+                    {
+                        loader:'css-loader',
+                        options: {
+                            url: true,
+                            import: true,
+                        }
+                    },
+                    'postcss-loader',
+                ],
                 include: [
                     path.resolve(__dirname, "src/"),
                     path.resolve(__dirname, "src/components/"),
