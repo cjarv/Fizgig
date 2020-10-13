@@ -1,5 +1,5 @@
 <template>
-    <div class="center-panel flx-row center">
+    <div class="center-panel flx-row center w-100">
         <h1>Van Tracker</h1>
     </div>
 </template>

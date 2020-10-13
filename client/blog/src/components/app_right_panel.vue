@@ -1,5 +1,5 @@
 <template>
-    <div class="right-panel flx-col center">
+    <div class="right-panel flx-col w-20">
         <h1>Good Morning Blog</h1>
         <div v-for="post in blog_posts">
             <blog :type="post.type" :title="post.title" :p="post.p" :location="post.location"></blog>
